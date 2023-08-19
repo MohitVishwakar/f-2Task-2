@@ -18,12 +18,12 @@ function showData() {
     html += "<td>" + element.Age + "</td>";
     html += "<td>" + element.Degree + "</td>";
 
-    html +=
-      '<td><img src="/trash-2 1.png" alt="" onclick="deleteData(' +
+     html +=
+      '<td><button onclick="deleteData(' +
       index +
-      ')" class="btn btn-danger"><img src="/edit 1.png" alt="" onclick="updateData(' +
+      ')" class="btn btn-danger">Delete</button><button onclick="updateData(' +
       index +
-      ')" class="btn btn-warning m-2"></td>';
+      ')" class="btn btn-warning m-2">Edite</button></td>';
 
     html += "</tr>";
   });
